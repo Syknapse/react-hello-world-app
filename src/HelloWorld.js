@@ -8,12 +8,16 @@ class HelloWorld extends Component {
         this.state = { greeting: 'Hello' };
         this.spanishify = this.spanishify.bind(this);
         this.lebanify = this.lebanify.bind(this);
+        this.removeGreeting = this.removeGreeting.bind(this);
     }
     spanishify() {
         this.setState({ greeting: 'Hola' });
     }
     lebanify() {
         this.setState({ greeting: 'Hi, keefak, sa va' });
+    }
+    removeGreeting() {
+        this.props.removeGreeting(this.props.name);
     }
     render () {
         return (
@@ -22,6 +26,8 @@ class HelloWorld extends Component {
             <br/>
             <button onClick={this.spanishify}>Spanishify!</button>
             <button onClick={this.lebanify}>Lebanify!</button>
+            <br />
+            <button onClick={this.removeGreeting}>Delete</button>
             </div>
         );
     }
