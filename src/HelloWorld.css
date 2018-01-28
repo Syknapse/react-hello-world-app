@@ -6,3 +6,10 @@
     margin: 20px;
     padding: 20px;
   }
+
+  button {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }

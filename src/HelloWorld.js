@@ -24,10 +24,10 @@ class HelloWorld extends Component {
             <div className="HelloWorld">
             {this.state.greeting} {this.props.name}!
             <br/>
-            <button onClick={this.spanishify}>Spanishify!</button>
-            <button onClick={this.lebanify}>Lebanify!</button>
+            <button onClick={this.spanishify}><span role="img" aria-label="Spain">🥘</span> Spanishify!</button>
+            <button onClick={this.lebanify}><span role="img" aria-label="Lebanon">🌲</span> Lebanify!</button>
             <br />
-            <button onClick={this.removeGreeting}>Delete</button>
+            <button onClick={this.removeGreeting}><span role="img" aria-label="Delete" title="Delete">✖️</span></button>
             </div>
         );
     }
